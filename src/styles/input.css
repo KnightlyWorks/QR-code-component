@@ -1,0 +1,28 @@
+/* ---------------------------------------------------------------------- */
+/* ВХОДНОЙ ФАЙЛ TAILWIND
+/* Этот файл содержит директивы и ваш собственный CSS.
+/* CLI будет его обрабатывать и генерировать финальный файл src/styles/tailwind.css.
+/* ---------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+    --color-slate-900: #1f314f;
+    --color-slate-500: #68778d;
+    --color-slate-300: #d5e1ef;
+    --color-white: #ffffff;
+    --color-blue-600: #2c7dfa;
+    --color-blue-500: #3685ff;
+    --spacing-200: 1rem; /*16*/
+    --spacing-300: 1.5rem;/*24*/
+    --spacing-500: 2.5rem;/*40*/
+    --font-size-text-preset-1: 1.375rem; /*22px*/
+    --font-size-text-preset-2: 0.9375rem; /*15px*/
+
+    --font-outfit: "Outfit", sans-serif;
+}
+
+body {
+    @apply flex flex-col items-center justify-center bg-slate-300 font-outfit;
+}
